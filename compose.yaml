@@ -2,7 +2,7 @@ services:
   json-server:
     build:
       dockerfile: Dockerfile.json-server
-    image: ghcr.io/bognarpal/joke-jsonserver:0.2
+    image: ghcr.io/bognarpal/joke-jsonserver:0.3
 
     ports:
       - "3000:80"
@@ -10,7 +10,7 @@ services:
   front-end: 
     build:
       dockerfile: Dockerfile.front-end
-    image: ghcr.io/bognarpal/joke-frontend:0.2
+    image: ghcr.io/bognarpal/joke-frontend:0.3
 
     ports:
       - "8001:80"
